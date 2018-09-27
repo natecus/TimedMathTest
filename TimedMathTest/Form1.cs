@@ -22,6 +22,12 @@ namespace TimedMathTest
             div1, div2, timeLeft, addRight,subRight,
             multRight, divRight;
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            DateTime today = DateTime.Now;
+            dateLabel.Text = today.ToString("MM/dd/YY");
+        }
+
         private void answer_Enter(object sender, EventArgs e)
         {
             NumericUpDown answerBox = sender as NumericUpDown;

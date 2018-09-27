@@ -16,7 +16,7 @@ namespace TimedMathTest
     public partial class Form1 : Form
     {
         WindowsMediaPlayer player = new WindowsMediaPlayer();
-
+       
         Random randomizer = new Random();
         int addend1, addend2, sub1, sub2, mult1, mult2, 
             div1, div2, timeLeft, addRight,subRight,
@@ -25,7 +25,7 @@ namespace TimedMathTest
         private void Form1_Load(object sender, EventArgs e)
         {
             DateTime today = DateTime.Now;
-            dateLabel.Text = today.ToString("MM/dd/YY");
+            dateLabel.Text = today.ToString("dd MMMMMM, yyyy");
         }
 
         private void answer_Enter(object sender, EventArgs e)
@@ -128,6 +128,7 @@ namespace TimedMathTest
             player.URL = "music.mp3";
             player.controls.play();
             StartTheQuiz();
+            timeLabel.BackColor = Color.White;
             startButton.Enabled = false;
         }
     }

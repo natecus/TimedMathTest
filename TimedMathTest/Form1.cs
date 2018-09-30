@@ -15,6 +15,8 @@ namespace TimedMathTest
     
     public partial class Form1 : Form
     {
+        //The video for the program can be found at
+        //https://screencast-o-matic.com/watch/cFQvedYjiV
         WindowsMediaPlayer player = new WindowsMediaPlayer();
        
         Random randomizer = new Random();
